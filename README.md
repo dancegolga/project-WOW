@@ -1,6 +1,3 @@
-Вот перевод отчета на английский язык, адаптированный под международные стандарты GitHub (научный стиль, профессиональная терминология и корректная разметка).
-
-Markdown
 # Bio-Astro Correlation Project: Wow! Signal & Chromosome 13
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
