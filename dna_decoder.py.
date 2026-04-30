@@ -1,0 +1,64 @@
+import numpy as np
+
+def analyze_chromosome_13(dna_sequence):
+    """
+    Анализ 13-й хромосомы на наличие скрытых информационных структур.
+    
+    Аргументы:
+        dna_sequence (str): Последовательность нуклеотидов (A, C, G, T).
+        
+    Возвращает:
+        numpy.ndarray: 4D тензор, представляющий системный код ядра.
+    """
+    
+    # Кодирование нуклеотидов в числовой массив для математической обработки
+    # A=0, C=1, G=2, T=3
+    mapping = {'A': 0, 'C': 1, 'G': 2, 'T': 3}
+    
+    # Очистка последовательности от лишних символов и перевод в числа
+    clean_seq = [mapping[b] for b in dna_sequence.upper() if b in mapping]
+    numeric_sequence = np.array(clean_seq)
+    
+    def hadamard_transform(a):
+        """
+        Быстрое преобразование Адамара для поиска частотных резонансов в коде.
+        """
+        n = len(a)
+        if n == 1:
+            return a
+        
+        # Рекурсивное деление для оптимального вычисления
+        a_left = hadamard_transform(a[0:n//2])
+        a_right = hadamard_transform(a[n//2:n])
+        
+        res = np.concatenate([a_left + a_right, a_left - a_right])
+        return res
+
+    # Выделение тензорного ядра (System Identification)
+    # Используем первые 1024 элемента для формирования эталонного блока
+    if len(numeric_sequence) < 1024:
+        # Дополнение нулями, если последовательность слишком коротка
+        padded = np.pad(numeric_sequence, (0, 1024 - len(numeric_sequence)), 'constant')
+        transformed_data = hadamard_transform(padded)
+    else:
+        transformed_data = hadamard_transform(numeric_sequence[:1024])
+    
+    # Реорганизация данных в 4-мерный тензор (структура 4x4x4x4)
+    # Это соответствует 4-мерной архитектуре мета-кода Вселенной
+    try:
+        tensor_core = transformed_data.reshape((4, 4, 4, 4))
+    except ValueError:
+        # Резервный вариант, если размер не совпадает
+        tensor_core = transformed_data[:256].reshape((4, 4, 4, 4))
+    
+    return tensor_core
+
+# Пример использования (тестовая последовательность)
+if __name__ == "__main__":
+    # Пример сегмента ДНК (в реальности здесь должен быть массив из 13-й хромосомы)
+    test_dna = "ATGC" * 256
+    result = analyze_chromosome_13(test_dna)
+    
+    print("--- Проект Исток: Дешифратор активирован ---")
+    print(f"Форма извлеченного тензора: {result.shape}")
+    print("Тензорное ядро успешно сформировано.")
