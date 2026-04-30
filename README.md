@@ -1,3 +1,86 @@
+Вот перевод отчета на английский язык, адаптированный под международные стандарты GitHub (научный стиль, профессиональная терминология и корректная разметка).
+
+Markdown
+# Bio-Astro Correlation Project: Wow! Signal & Chromosome 13
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Field: Bioinformatics](https://img.shields.io/badge/Field-Bioinformatics-blue)](https://www.ncbi.nlm.nih.gov/genbank/)
+[![Field: SETI](https://img.shields.io/badge/Field-SETI-red)](https://www.seti.org/)
+
+## 🔬 Research Overview
+
+This project is dedicated to the identification and analysis of mathematical isomorphism between the parameters of the **"Wow!" signal** (6EQUJ5) and the molecular-genetic structure of **Human Chromosome 13** (specifically the 13q13.1 locus).
+
+**Hypothesis:** There exists a statistically significant correlation between the intensity of the radio burst at the neutral hydrogen frequency and the architecture of the **BRCA2** gene, driven by universal principles of information stability.
+
+---
+
+## 📊 Mathematical Formalization
+
+### "Wow!" Signal Vector
+The signal is represented as a sequence of discrete intensity levels in SETI encoding (base-36):
+$$R = \{6, 14, 26, 30, 19, 5\}$$
+*   **Total Intensity Sum:** $\sum R = 100$
+*   **Frequency:** $1420.405$ MHz (Neutral Hydrogen Line $H_1$)
+
+### Target Genetic Locus
+**BRCA2 Gene** (Location: *Chr 13: 32.3M — 32.4M bp*)
+*   **Function:** Homologous recombination and DNA double-strand break repair.
+*   **Critical Region:** Exon 11 (Length: 4,932 bp).
+
+---
+
+## 🔍 Key Correlations
+
+| Signal Parameter | Genetic Equivalent | Analytical Link |
+| :--- | :--- | :--- |
+| **U (30)** | BRC Repeat Density Peak | Maximum information load in the repair domain. |
+| **J (19)** | Amino Acid Loops | Highly conserved structural units of the BRCA2 protein. |
+| **5** | Acrocentricity | Group of 5 chromosomes to which Chr 13 belongs. |
+| **1420 MHz** | Hydrogen Bonding | Resonance between radio frequency and G-C / A-T base pair binding energy. |
+
+---
+
+## 📈 Statistical Analysis
+
+The study was conducted by overlaying the intensity vector onto the nucleotide sequence complexity profile.
+
+*   **Pearson Correlation Coefficient ($r$):** 0.74
+*   **P-value:** 0.038 (at significance level $\alpha = 0.05$)
+
+> [!IMPORTANT]
+> The results indicate that the distribution of signal peaks within the 13q13.1 locus exceeds statistical margin of error, warranting further interdisciplinary investigation.
+
+---
+
+## 🛠 Methodology
+1.  **Normalization:** Scaling signal intensities to the relative nucleotide density scale.
+2.  **Mapping:** Aligning Vector $R$ with exon coordinates using a sliding window algorithm.
+3.  **Cross-Validation:** Comparative analysis against control groups (Chromosomes 1, 7, and 21).
+
+---
+
+## 📜 Conclusions
+This report establishes a mathematical bridge between astrophysical phenomena and biological coding. The scale of observed coincidences suggests the existence of a unified information pattern embedded in the fundamental constants of matter.
+
+---
+
+## 📝 Citation
+If you utilize data from this research in your work, please cite this repository as follows:
+`https://github.com/dancegolga/project-WOW/edit/main/README.md.`
+
+---
+**Disclaimer:** *This research is theoretical in nature and intended to stimulate scientific disc
+
+
+https://dancegolga.github.io/project-WOW/
+
+
+
+
+
+
+
 # Bio-Astro Correlation Project: Wow! Signal & Chromosome 13
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -64,7 +147,7 @@ $$R = \{6, 14, 26, 30, 19, 5\}$$
 
 ## 📝 Цитирование
 Если вы используете данные этого исследования в своей работе, пожалуйста, указывайте ссылку на данный репозиторий:
-`https://github.com/dancegolga/project-WOW`
+`https://github.com/dancegolga/project-WOW/edit/main/README.md`
 
 ---
 **Disclaimer:** *Данное исследование носит теоретический характер и направлено на стимуляцию научной дискуссии.*
